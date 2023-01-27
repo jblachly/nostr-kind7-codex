@@ -29,6 +29,7 @@ _seen in the wild or widely implemented_
 | + | Like            | Defined in NIP-25 |
 | - | Dislike or Flag | Defined in NIP-25 |
 | ! | Hide post       | [nostr_console](https://github.com/vishalxl/nostr_console/blob/f376e58abcdcb87f8f95a81e0b8eaf01099fa423/lib/console_ui.dart#L1358) |
+| ⚠️ | Report post     | [amethyst](https://snort.social/e/note17wkwa42u4nn3ur8v94qcc73xksxj7crc0v9w738jwcsym8trz9lsw5ylnt) |
 | ❤️ | Like | |
 | 🤙 | Like | |
 | 👍 | Like | |
@@ -36,23 +37,24 @@ _seen in the wild or widely implemented_
 
 ## Client Support
 
-| Client       | + | - | ❤️ | 🤙 | 👍 | comments |
-| ------------ |---|---|---|---| --- |-------- |
-| astral       |   |   |   |   |   | no kind 7 reactions |
-| Blockcore Notes | 👀 | 👀 |   |   | 👀 | Also recognizes 👎. Permits arbitrary emoji reaction. [Tallies and displays several kind 7](https://github.com/block-core/blockcore-notes/blob/733e246e5ff5a0952af3b7bbe0119ba0aa2f7fd0/src/app/services/thread.ts#L253) |
-| Branle       |   |   |   |   |   | |
-| Coracle      | ✅ | ✅ | 👀 | 👀 | 👀 | [also recognizes empty kind 7](https://github.com/staab/coracle/blob/59c4fec4f0ed0c621597a522e97aa881a87fa576/src/util/nostr.js#L63) |
-| Daisy        | ✅ |   |   |   |   |   | |
-| Damus        | 👀 |   | 👀 | ✅ |   | Originated the Shaka 🤙 |
-| futur        |   |   |   |   |   | parsed but not emitted |
-| Gossip       | ✅ |   |   |   |   | [also recognizes empty kind 7 as like](https://github.com/mikedilger/gossip/blob/56813ae772e02bd627d393da4f8cd8ca687ada14/src/globals.rs#L170) |
-| Iris         | ✅ |   |   |   |   | |
-| Minds        | ? | ? |   |   |   | |
-| more-speech  |   |   |   |   |   | no kind 7 reactions |
-| noscl        |   |   |   |   |   | does not support KindReaction |
-| nostr-java   | ✅ | ✅ |   |   |   | |
-| Nostrid      | ✅ |   |   |   |   | [also recognizes empty kind 7 as like](https://github.com/lapulpeta/Nostrid/blob/fa28e2b99736573b5be8dd9a4fb7cb3154314a21/Nostrid.Core/Shared/NoteViewer.razor#L231) |
-| snort.social | 👀 | 👀 | 👀 | 👀 | 👀 | [also recognizes 💯 and empty kind 7 as like; also 👎 as dislike](https://github.com/v0l/snort/blob/3cbec9f2727825558aec7be457d0b42074d8ffdf/src/Util.ts#L103) |
+| Client       | + | - | ❤️ | 🤙 | 👍 | ⚠️ |comments |
+| ------------ |---|---|---|---| --- |---|-------- |
+| Amethyst     | ✅ |   | 👀 | 👀 | 👀 | ✅ | + , 🤙 , 👍 are converted into ❤️ |
+| astral       |   |   |   |   |   |   | no kind 7 reactions |
+| Blockcore Notes | 👀 | 👀 |   |   | 👀 |   | Also recognizes 👎. Permits arbitrary emoji reaction. [Tallies and displays several kind 7](https://github.com/block-core/blockcore-notes/blob/733e246e5ff5a0952af3b7bbe0119ba0aa2f7fd0/src/app/services/thread.ts#L253) |
+| Branle       |   |   |   |   |   | |   |
+| Coracle      | ✅ | ✅ | 👀 | 👀 | 👀 |   | [also recognizes empty kind 7](https://github.com/staab/coracle/blob/59c4fec4f0ed0c621597a522e97aa881a87fa576/src/util/nostr.js#L63) |
+| Daisy        | ✅ |   |   |   |   |   |   | |
+| Damus        | 👀 |   | 👀 | ✅ |   |   | Originated the Shaka 🤙 |
+| futur        |   |   |   |   |   |   | parsed but not emitted |
+| Gossip       | ✅ |   |   |   |   |   | [also recognizes empty kind 7 as like](https://github.com/mikedilger/gossip/blob/56813ae772e02bd627d393da4f8cd8ca687ada14/src/globals.rs#L170) |
+| Iris         | ✅ |   |   |   |   |   | |
+| Minds        | ? | ? |   |   |   |   | |
+| more-speech  |   |   |   |   |   |   | no kind 7 reactions |
+| noscl        |   |   |   |   |   |   | does not support KindReaction |
+| nostr-java   | ✅ | ✅ |   |   |   |   | |
+| Nostrid      | ✅ |   |   |   |   |   | [also recognizes empty kind 7 as like](https://github.com/lapulpeta/Nostrid/blob/fa28e2b99736573b5be8dd9a4fb7cb3154314a21/Nostrid.Core/Shared/NoteViewer.razor#L231) |
+| snort.social | 👀 | 👀 | 👀 | 👀 | 👀 |   | [also recognizes 💯 and empty kind 7 as like; also 👎 as dislike](https://github.com/v0l/snort/blob/3cbec9f2727825558aec7be457d0b42074d8ffdf/src/Util.ts#L103) |
 
 ✅ Emits
 👀 Recognizes
