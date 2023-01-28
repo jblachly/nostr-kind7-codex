@@ -45,7 +45,7 @@ _seen in the wild or widely implemented_
 | Branle       |   |   |   |   |   | |   |
 | Coracle      | ✅ | ✅ | 👀 | 👀 | 👀 |   | [also recognizes empty kind 7](https://github.com/staab/coracle/blob/59c4fec4f0ed0c621597a522e97aa881a87fa576/src/util/nostr.js#L63) |
 | Daisy        | ✅ |   |   |   |   |   |   | |
-| Damus        | 👀 |   | 👀 | ✅ |   |   | Originated the Shaka 🤙 |
+| Damus        | 👀 | 👀 | 👀 | ✅ | 👀 | 👀 | Damus aggregates all reactions as "like". Originated the Shaka 🤙 |
 | futur        |   |   |   |   |   |   | parsed but not emitted |
 | Gossip       | ✅ |   |   |   |   |   | [also recognizes empty kind 7 as like](https://github.com/mikedilger/gossip/blob/56813ae772e02bd627d393da4f8cd8ca687ada14/src/globals.rs#L170) |
 | Iris         | ✅ |   |   |   |   |   | |
